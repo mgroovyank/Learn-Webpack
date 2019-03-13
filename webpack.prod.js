@@ -6,7 +6,7 @@ module.exports=merge(common,{
     mode:"production",
     //devtool:"none"(put only when you want to remove eval statements from main.js)
     output:{
-        filename:"main.[contentHash].js",
+        filename:"[name].[contentHash].bundle.js",
         path:path.resolve(__dirname,"dist")
     },
     plugins:[new cleanWebpackPlugin()]
